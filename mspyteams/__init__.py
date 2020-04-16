@@ -1,4 +1,5 @@
-import logging
+"""Sansio MsTeams cards composing library"""
 
-_LOGGER = logging.getLogger(__name__)
+from .card import *
 
+__version__ = "0.0.1"
