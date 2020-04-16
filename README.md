@@ -1,4 +1,6 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![CI](https://github.com/sander76/mspyteams/workflows/CI/badge.svg)
+
 
 # MsPyTeams
 
