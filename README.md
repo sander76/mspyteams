@@ -4,7 +4,7 @@
 
 A sansio card creation library for sending cards to Microsoft Teams.
 
-mspyteams requires python 3.5 and up.
+mspyteams requires python 3.6 and up.
 
 ## Installation
 
@@ -22,3 +22,8 @@ Currently the `aiohttp` client is implemented as an option. To install:
 
 There are more ms teams card libaries available, like [pymsteams](https://github.com/rveachkc/pymsteams) and [msteams](https://github.com/johanjeppsson/msteams), and I have thought of adapting them to my needs by doing pull requests etc.
 However, my goals were to provide a library that complies with pep8 (no camelcasing), doing an sans-io implementation, using flit, trying to get github actions running in combination with nox and learning some more along the way. So to do that effectively, I thought it would be best to do a library from scratch. And there you go..
+
+## Usage
+
+For a complete description of the Card API go [here](https://docs.microsoft.com/en-us/outlook/actionable-messages/message-card-reference)
+

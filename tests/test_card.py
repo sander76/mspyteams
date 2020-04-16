@@ -39,13 +39,16 @@ def test_card_fail(card):
 def test_add_section(card):
     _card_title = "Card title"
     _title = "a title"
+    _text = "text"
     expected = {
         "@type": "MessageCard",
         "@context": "https://schema.org/extensions",
         "title": _card_title,
+        "text": _text,
         "sections": [{"title": _title}],
     }
     card.title = _card_title
+    card.text = _text
     section = Section()
     section.title = _title
 

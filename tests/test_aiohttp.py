@@ -20,11 +20,13 @@ async def mock_server(aiohttp_server):
     app.router.add_post("/testwebhook", resp)
     server = await aiohttp_server(app)
 
-    return server
+    yield server
 
 
 @pytest.mark.asyncio
 async def test_send(mock_server, card):
+    card.title = "title"
+    card.text = "text"
     async with ClientSession() as session:
         res = await card_aiohttp.send(
             card, f"http://localhost:{mock_server.port}/testwebhook", session

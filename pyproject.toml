@@ -17,5 +17,5 @@ classifiers = ["License :: OSI Approved :: MIT License",
 
 [tool.flit.metadata.requires-extra]
 aiohttp = ["aiohttp"]
-test = ["pytest","pytest-asyncio"]
-dev = ["aiohttp","pytest-cov","pylint"]
+test = ["pytest","pytest-asyncio","pytest-aiohttp"]
+dev = ["aiohttp","pytest-cov","pylint","pytest-cov","pre-commit"]

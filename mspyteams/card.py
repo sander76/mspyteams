@@ -102,7 +102,7 @@ class Card(TeamData):
     def card_data(self):
         if self.text is None and self.summary is None:
             raise TeamsWebhookException("You need to provide either text or a summary")
-        super().card_data()
+        return super().card_data()
 
     def add_section(self, section: Section):
         """Add a section to the card."""
