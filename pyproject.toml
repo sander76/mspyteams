@@ -18,7 +18,7 @@ classifiers = ["License :: OSI Approved :: MIT License",
 [tool.flit.metadata.requires-extra]
 aiohttp = ["aiohttp"]
 test = ["pytest","pytest-asyncio","pytest-aiohttp"]
-dev = ["aiohttp","pytest-cov","pylint","coverage[toml]>=5.0.3","pytest-cov","pre-commit"]
+dev = ["aiohttp","pytest-cov","pylint","coverage[toml]>=5.0.3","pre-commit"]
 
 [tool.coverage.run]
 branch = true
